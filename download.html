@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You – Download Your Cat Care Guide</title>
+  <meta name="robots" content="noindex, nofollow" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --green-50:  #f0faf4;
+      --green-100: #d6f2e2;
+      --green-200: #aee4c6;
+      --green-300: #79cda4;
+      --green-400: #48b57f;
+      --green-500: #2d9660;
+      --green-600: #1f7548;
+      --cream:     #fdfaf5;
+      --warm-100:  #f7f2ea;
+      --warm-200:  #ede5d5;
+      --text-dark: #1a2417;
+      --text-mid:  #3b4f3e;
+      --text-light:#6b8070;
+      --white:     #ffffff;
+      --font-display: 'Cormorant Garamond', Georgia, serif;
+      --font-body:    'DM Sans', sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: var(--font-body);
+      background: linear-gradient(160deg, var(--green-50) 0%, var(--cream) 60%, var(--warm-100) 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+      color: var(--text-dark);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .card {
+      background: var(--white);
+      border-radius: 28px;
+      padding: 60px 52px;
+      max-width: 580px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 24px 80px rgba(45,150,96,.16);
+      border: 1px solid var(--green-100);
+      animation: rise .8s cubic-bezier(.4,0,.2,1) both;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--green-300), var(--green-500), var(--green-300));
+    }
+
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(30px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .checkmark {
+      width: 80px; height: 80px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--green-400), var(--green-600));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 28px;
+      font-size: 2.2rem;
+      animation: pop .6s .3s cubic-bezier(.34,1.56,.64,1) both;
+      box-shadow: 0 8px 30px rgba(45,150,96,.3);
+    }
+
+    @keyframes pop {
+      from { opacity: 0; transform: scale(0); }
+      to   { opacity: 1; transform: scale(1); }
+    }
+
+    h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 5vw, 2.8rem);
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--text-dark);
+      margin-bottom: 16px;
+    }
+
+    h1 em {
+      font-style: italic;
+      color: var(--green-500);
+    }
+
+    .subtitle {
+      color: var(--text-light);
+      font-size: 1rem;
+      line-height: 1.75;
+      margin-bottom: 36px;
+    }
+
+    .subtitle strong { color: var(--text-mid); }
+
+    .divider {
+      width: 60px; height: 2px;
+      background: var(--green-200);
+      margin: 32px auto;
+      border-radius: 999px;
+    }
+
+    /* ═══════════════════════════════════════════ */
+    <!--  DOWNLOAD BUTTON                         -->
+    <!-- Change href="YOUR_PDF_LINK_HERE" to your -->
+    <!-- actual PDF download URL                  -->
+    /* ═══════════════════════════════════════════ */
+    .download-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: linear-gradient(135deg, var(--green-500), var(--green-600));
+      color: #fff;
+      font-family: var(--font-body);
+      font-size: 1.05rem;
+      font-weight: 600;
+      padding: 20px 44px;
+      border-radius: 999px;
+      text-decoration: none;
+      box-shadow: 0 8px 32px rgba(45,150,96,.35);
+      transition: all .3s cubic-bezier(.4,0,.2,1);
+      animation: rise .6s .5s ease both;
+    }
+
+    .download-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 14px 44px rgba(45,150,96,.45);
+    }
+
+    .download-btn:active { transform: translateY(0); }
+
+    .download-icon { font-size: 1.3rem; }
+
+    .tips {
+      background: var(--green-50);
+      border: 1px solid var(--green-100);
+      border-radius: 16px;
+      padding: 24px 28px;
+      margin-top: 36px;
+      text-align: left;
+    }
+
+    .tips-title {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--green-700);
+      margin-bottom: 12px;
+    }
+
+    .tips ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .tips ul li {
+      color: var(--text-mid);
+      font-size: .9rem;
+      padding: 5px 0;
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .tips ul li::before { content: '✓'; color: var(--green-500); font-weight: 700; }
+
+    .footer-note {
+      margin-top: 32px;
+      font-size: .82rem;
+      color: var(--text-light);
+      line-height: 1.8;
+    }
+
+    /* ═══ EDIT: Replace with your Instagram URL ═══ */
+    .footer-note a {
+      color: var(--green-600);
+      font-weight: 600;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    @media (max-width: 480px) {
+      .card { padding: 40px 24px; }
+      .download-btn { padding: 18px 32px; font-size: .95rem; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+
+    <div class="checkmark">✓</div>
+
+    <!-- ═══ EDIT: Thank you headline ═══ -->
+    <h1>You're All Set,<br/><em>Cat Lover!</em> 🐾</h1>
+
+    <p class="subtitle">
+      Thank you so much for your purchase of the <strong>Ultimate Cat Care Guide</strong>.<br/>
+      Your support means the world. Your guide is ready — start reading right away!
+    </p>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!--        DOWNLOAD BUTTON                      -->
+    <!--  ↓ REPLACE "YOUR_PDF_LINK_HERE" with your  -->
+    <!--    actual PDF URL or file path ↓            -->
+    <!-- ═══════════════════════════════════════════ -->
+    <a href="YOUR_PDF_LINK_HERE" download class="download-btn">
+      <span class="download-icon">⬇</span>
+      Download Your Book Now
+    </a>
+
+    <div class="divider"></div>
+
+    <div class="tips">
+      <div class="tips-title">📖 Quick Tips to Get Started</div>
+      <ul>
+        <li>Save the PDF to your device so you can read it anytime, offline</li>
+        <li>Open it on your phone for easy reference while caring for your cat</li>
+        <li>Start with Chapter 1 for the foundation, or jump to any chapter you need most</li>
+        <li>Share what you learn — your fellow cat owners will thank you!</li>
+      </ul>
+    </div>
+
+    <p class="footer-note">
+      Having trouble downloading?<br/>
+      Contact me on Instagram:
+      <!-- ═══ EDIT: Replace with your Instagram URL ═══ -->
+      <a href="https://instagram.com/YOUR_USERNAME" target="_blank" rel="noopener">@YOUR_USERNAME</a>
+      and I'll help you right away. 💚
+    </p>
+
+  </div>
+</body>
+</html>
