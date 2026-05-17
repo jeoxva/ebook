@@ -670,56 +670,75 @@
     /* ═══════════════════════════════════════════ */
     /*  7. PAYPAL SECTION                         */
     /* ═══════════════════════════════════════════ */
-    #paypal {
-      background: var(--warm-100);
-    }
-
-    .paypal-card {
-      max-width: 580px;
-      margin: 0 auto;
-      background: var(--white);
-      border-radius: var(--radius-lg);
-      padding: 48px 40px;
-      text-align: center;
-      box-shadow: var(--shadow-md);
-      border: 1px solid var(--warm-200);
-      #paypal, .paypal-card, .paypal-btn-wrap {
-  word-break: normal;
-  overflow-wrap: normal;
-  white-space: normal;
+   #paypal {
+  background: var(--warm-100);
+  padding: 64px 0;
 }
-    }
 
-    .paypal-icon {
-      font-size: 2.5rem;
-      margin-bottom: 12px;
-    }
+.paypal-card {
+  max-width: 520px;
+  margin: 0 auto;
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 48px 40px;
+  text-align: center;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--warm-200);
+  overflow: hidden;
+}
 
-    .paypal-card h3 {
-      font-size: 1.5rem;
-      margin-bottom: 8px;
-    }
+.paypal-icon {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+}
 
-    .paypal-card p {
-      color: var(--text-light);
-      font-size: 0.93rem;
-      margin-bottom: 28px;
-    }
+.paypal-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
 
-    .paypal-btn-wrap {
-      display: flex;
-      justify-content: center;
-    }
+.paypal-card p {
+  color: var(--text-light);
+  font-size: 0.93rem;
+  margin-bottom: 28px;
+}
 
-    .paypal-secure-note {
-      margin-top: 20px;
-      font-size: .8rem;
-      color: var(--text-light);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 6px;
-    }
+.paypal-btn-wrap {
+  text-align: center;
+  width: 100%;
+}
+
+#paypal-container-QAKLQXWB5KEEL {
+  width: 100% !important;
+  min-width: 300px !important;
+  max-width: 400px !important;
+  margin: 0 auto !important;
+  writing-mode: horizontal-tb !important;
+  overflow: hidden !important;
+}
+
+.paypal-secure-note {
+  margin-top: 20px;
+  font-size: .8rem;
+  color: var(--text-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+/* موبايل */
+@media (max-width: 480px) {
+  .paypal-card {
+    padding: 32px 16px;
+    margin: 0 16px;
+    border-radius: 16px;
+  }
+
+  #paypal-container-QAKLQXWB5KEEL {
+    min-width: 260px !important;
+  }
+}
 
     /* ═══════════════════════════════════════════ */
     /*  8. FAQ SECTION                            */
