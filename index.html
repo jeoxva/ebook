@@ -1287,8 +1287,11 @@
           <!-- ═══════════════════════════════════════ -->
           <!-- PAYPAL BUTTON START                    -->
           <!-- ↓↓↓ PASTE YOUR PAYPAL BUTTON CODE HERE ↓↓↓ -->
-       <script 
-  src="https://www.paypal.com/sdk/js?client-id=BAASeW38312xca6-fMfLoutjd7o8w1dQyph7Ql9o_TFc1JCNFx-TTl4pwPayL2cmRPT13cz0uoLJeyImSY&components=hosted-buttons&disable-funding=venmo&currency=USD">
+       <div id="paypal-container-QAKLQXWB5KEEL"></div>
+<script>
+  paypal.HostedButtons({
+    hostedButtonId: "QAKLQXWB5KEEL",
+  }).render("#paypal-container-QAKLQXWB5KEEL")
 </script>
           <!-- ↑↑↑ END OF PAYPAL CODE ↑↑↑ -->
           <!-- PAYPAL BUTTON END                      -->
